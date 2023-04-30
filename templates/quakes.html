@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<h2>Earthquakes recorded in the last {{time}}</h2>
+<h4>Total number: {{count}}</h4>
+<h4>Nearest quake: {{closest['properties']['title'][8:]}} and it was a <b>{{closest['properties']['mag']}}</b></h4>
+{% if recent_quakes %}
+{% for quake in recent_quakes %}
+<br>
+This quake is {{quake['properties']['title'][8:]}}, and was <b>{{quake['properties']['title'][:5]}}</b>
+<!-- split the coordinates on ',', use [0][1] as lat/long, conv to int, and compare to input to get closest-->
+
+<br>
+{% endfor %}
+{% else %} 
+Ain't any
+{% endif %}
+</html> 
