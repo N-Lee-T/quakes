@@ -8,7 +8,31 @@ Data can be retrieved by making a GET request to a base url with three parameter
 + LOCATION - Currently, the program requires both latitude and longitude coordinates. This could be changed in an update to require only a place name.
   + LATITUDE (lat): The latitudinal position of the location
   + LONGITUDE (lon): The longitudinal position of the location
+  
+  **lat** and **lon** MUST be in integer or float format. That means that ticks ( ' ), degree symbol, or more than one period are not acceptable input.
+
+  Acceptable: 
+  - 43.56800
+  - 43.568
+  - 43.56
+  - 43.5
+  - 43
+  - -43
+
+  Not acceptable: 
+  - 43°34'04.8"N 
+  - 43°34'04.8" 
+  - 43°34'04.8" 
+  - 43°34'04.8" 
+  - 43S
+  - -43° 
+  - 43 S
+
 + TIME PERIOD (time): The period of time (hour, last 24 hours, or month) for which we are looking for nearby earthquakes 
+Times: 
+  - 'h' or 'H' for last hour
+  - 'd' or 'D' for last 24 hours
+  - 'm' or 'M' for last month
 
 The url can be constructed in the request as shown below (Python, but other languages would be similar):
 `result = requests.get(url=url, time=time, lat=lat, lon=lon).json()`
