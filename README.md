@@ -59,5 +59,6 @@ This JSON object can be parsed using any method that the client wishes to implem
 
 
 # Sequence Diagram
-![Sequence diagram of the quakes microservice](https://user-images.githubusercontent.com/98563878/235456236-2c1ddd3e-fd2b-43e7-a5e6-c15726e59fd3.png)
+
+![Sequence diagram of the quakes microservice](https://user-images.githubusercontent.com/98563878/235463877-8352f260-df0c-4063-aed2-c70195aa4100.png)
 
