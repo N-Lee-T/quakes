@@ -6,8 +6,8 @@ This microservice application uses real-time USGS JSON feeds to return data abou
 Data can be retrieved by making a GET request to a base url with three parameters. The data for the parameters can be obtained in any way that the client wishes, but the url must contain all three or it will not return any data. 
 
 + LOCATION - Currently, the program requires both latitude and longitude coordinates. This could be changed in an update to require only a place name.
-  + LATITUDE (lon): The latitudinal position of the location
-  + LONGITUDE (lat): The longitudinal position of the location
+  + LATITUDE (lat): The latitudinal position of the location
+  + LONGITUDE (lon): The longitudinal position of the location
 + TIME PERIOD (time): The period of time (hour, last 24 hours, or month) for which we are looking for nearby earthquakes 
 
 The url can be constructed in the request as shown below (Python, but other languages would be similar):
