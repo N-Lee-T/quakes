@@ -50,9 +50,9 @@ In this example, the URL is requesting earthquakes within the last hour ('time=h
 
 ## Receiving data from this microservice
 This service will provide a JSON object to the client containing three pieces of data: 
-Count of the total number of earthquakes recorded by USGS during the specified period (hour, last 24 hours, month)
-Location of the nearest earthquake during the specified period (string description, with varying levels of detail)
-Magnitude of the nearest earthquake
+- Count of the total number of earthquakes recorded by USGS during the specified period (hour, last 24 hours, month)
+- Location of the nearest earthquake during the specified period (string description, with varying levels of detail)
+- Magnitude of the nearest earthquake
 
 This JSON object can be parsed using any method that the client wishes to implement. A simple example:
 `print(f"\nOf the {result['count']} quakes, the nearest quake was (in) {result['location']}, and its magnitude was {result['magnitude']}\n")`
