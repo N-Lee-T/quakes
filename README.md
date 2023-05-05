@@ -22,8 +22,8 @@ Data can be retrieved by making a GET request to a base url with three parameter
   Not acceptable: 
   - 43°34'04.8"N 
   - 43°34'04.8" 
-  - 43°34'04.8" 
-  - 43°34'04.8" 
+  - 43°34'04 
+  - 43°34' 
   - 43S
   - -43° 
   - 43 S
